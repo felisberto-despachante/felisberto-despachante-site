@@ -1,0 +1,64 @@
+.header-div {
+  background-color: lightgrey;
+}
+
+.main-div {
+  display: flex;
+  justify-content: flex-start;
+  background-color: orangered;
+}
+
+aside {
+  width: 20%;
+  background-color: lightblue;
+}
+
+router-outlet {
+  width: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  background-color: #01006a;
+  margin: 2px 0;
+  border: 1px solid black;
+  /*padding: 10px;*/
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.quick-info-div {
+  background-color: #770a0a;
+  padding: 0 2px;
+  color: lightgrey;
+  text-align: center;
+}
+
+.quick-info-div > h3 {
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+app-contatos, app-formularios, app-inicio, app-links, app-servicos, app-sobre-nos {
+  width: 80%;
+  height: 80%;
+  background-color: lightgreen;
+}
