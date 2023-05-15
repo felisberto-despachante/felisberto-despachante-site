@@ -1,64 +1,33 @@
-.header-div {
-  background-color: lightgrey;
+header{
+  padding: 8px 0;
+  background-color: #242424;
 }
 
-.main-div {
+i img{
+  height: 50px;
+  margin-left: 16px;
+}
+
+nav {
   display: flex;
-  justify-content: flex-start;
-  background-color: orangered;
+  justify-content: space-between;
+  align-items: center;
 }
 
-aside {
-  width: 20%;
-  background-color: lightblue;
-}
-
-router-outlet {
-  width: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 5px 0;
-  overflow: hidden;
-}
-
-li {
+ul{
+  list-style: none;
   display: flex;
-  justify-content: center;
-  background-color: #01006a;
-  margin: 2px 0;
-  border: 1px solid black;
-  /*padding: 10px;*/
-  border-radius: 5px;
-  cursor: pointer;
+  margin-bottom: 0;
+  /*align-items: end;*/
 }
 
-a {
+ul a {
+  color: white;
   text-decoration: none;
-  color: lightgrey;
+  text-transform: uppercase;
+  margin-right: 28px;
 }
 
-.quick-info-div {
-  background-color: #770a0a;
-  padding: 0 2px;
-  color: lightgrey;
-  text-align: center;
-}
-
-.quick-info-div > h3 {
-}
-
-address {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.9rem;
-  margin-bottom: 5px;
-}
-
-app-contatos, app-formularios, app-inicio, app-links, app-servicos, app-sobre-nos {
-  width: 80%;
-  height: 80%;
-  background-color: lightgreen;
+ul li:nth-last-child(1) a{
+  margin-right: 75px;
 }
