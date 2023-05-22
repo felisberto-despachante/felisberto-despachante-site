@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+$branco-claro: #FAFAFA;
+$preto-claro: #242424;
+
+$branco-letras: #FFFFFF;
+$preto-letras: #171717;
+$amarelo-letras: #FDA500;
+
+$amarelo-button: #FDA500;
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'roboto', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.bg-branco{
+  display: flex;
+  padding: 100px 65px;
+  background-color: $branco-claro;
+  color: $preto-letras;
+}
+
+.bg-preto{
+  display: flex;
+  padding: 75px 5%;
+  background-color: $preto-claro;
+  color: $branco-letras;
+  h2{
+    font-size: 32px;
+  }
+}
+
+.cor-auxiliar{
+  color: $amarelo-letras;
+}
+
+.btn-amarelo{
+  background-color: $amarelo-button;
+  color: $preto-claro;
+  border-radius: 50px;
+  width: 176px;
+  height: 47px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}

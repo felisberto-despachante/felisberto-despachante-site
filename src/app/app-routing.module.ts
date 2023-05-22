@@ -1,12 +1,12 @@
 import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
 import {HomeComponent} from "./home/home.component";
-import {FuncionarioComponent} from "./funcionario/funcionario.component";
+import {ArquivosComponent} from "./arquivos/arquivos.component";
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'funcionario', component: FuncionarioComponent},
-  {path: '**', redirectTo: ''}
+  {path: 'home', component: HomeComponent},
+  {path: 'arquivos', component: ArquivosComponent},
+  {path: '**', redirectTo: 'home'}
 ]
 
 @NgModule({
