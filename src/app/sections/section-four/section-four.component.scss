@@ -1,0 +1,35 @@
+.section-four {
+  justify-content: space-around;
+
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: .5rem;
+    text-align: center;
+  }
+
+  > div {
+    width: 30vw;
+    margin: 0 8vw;
+  }
+}
+
+.nota-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    margin-bottom: 0.125rem;
+    margin-right: 0.375rem;
+  }
+
+  img {
+    height: 1.5rem;
+  }
+}

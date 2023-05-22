@@ -1,0 +1,58 @@
+/*  Section Three */
+
+.section-three {
+  flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  h2 {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > img {
+      width: 41vw;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    p {
+      width: 40vw;
+      font-size: 1.5rem;
+    }
+
+    > p {
+      text-align: end;
+    }
+
+    > div {
+      > p {
+        margin-bottom: 1.4rem;
+      }
+
+      > button {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+      height: 24px;
+      width: 24px;
+      margin-right: 2px;
+      margin-left: 0;
+      padding-bottom: 4px;
+    }
+  }
+}
