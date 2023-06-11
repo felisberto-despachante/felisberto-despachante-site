@@ -17,7 +17,7 @@
   }
 
   span {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
   }
 }
@@ -48,8 +48,8 @@
     }
 
     li::before {
-      width: 35px;
-      height: 35px;
+      width: 24px;
+      height: 24px;
       background-image: url('/assets/arquivos/Folder.svg');
     }
 
@@ -61,8 +61,8 @@
       a {
         content: '';
         display: inline-block;
-        width: 39px;
-        height: 39px;
+        width: 24px;
+        height: 24px;
         background-image: url('/assets/arquivos/DownloadSimple.svg');
       }
     }
@@ -70,8 +70,8 @@
 
   &.links {
     li::before {
-      width: 35px;
-      height: 35px;
+      width: 24px;
+      height: 24px;
       background-image: url('/assets/arquivos/LinkSimple.svg');
     }
 

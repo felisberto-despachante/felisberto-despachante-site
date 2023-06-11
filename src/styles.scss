@@ -4,9 +4,9 @@ $preto-claro: #242424;
 
 $branco-letras: #FFFFFF;
 $preto-letras: #171717;
-$amarelo-letras: #FDA500;
+$vermelho-letras: #DE353B;
 
-$amarelo-button: #FDA500;
+$vermelho-button: #DE353B;
 
 *{
   padding: 0;
@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -50,12 +50,12 @@ h3 {
 }
 
 .cor-auxiliar{
-  color: $amarelo-letras;
+  color: $vermelho-letras;
 }
 
-.btn-amarelo{
-  background-color: $amarelo-button;
-  color: $preto-claro;
+.btn-vermelho{
+  background-color: $vermelho-button;
+  color: $branco-letras;
   border-radius: 50px;
   width: 176px;
   height: 47px;
