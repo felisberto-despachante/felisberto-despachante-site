@@ -60,17 +60,22 @@
         align-items: center;
         justify-content: space-between;
 
-        a {
+        .download-icon {
           content: '';
           display: inline-block;
           width: 24px;
           height: 24px;
           background-image: url('/assets/arquivos/DownloadSimple.svg');
+          margin-left: 5px;
         }
       }
-      .download-options{
+
+      .download-options {
         display: flex;
-        div{
+
+        > a {
+          text-decoration: none;
+          color: $preto-letras;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -79,18 +84,60 @@
           width: 90px;
           margin-left: 15px;
           cursor: pointer;
-          a{
-            margin-left: 5px;
-          }
         }
       }
     }
   }
 
   &.links {
+
+    > ul {
+      > li {
+        a {
+          width: 100%;
+          text-decoration: none;
+          color: $preto-letras;
+
+          span {
+            position: relative;
+
+            &::before,
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              height: 2px;
+              width: 0;
+              background-color: black;
+              transition: width 0.5s ease;
+            }
+
+            &::before {
+              left: 50%;
+              transform-origin: left;
+            }
+
+            &::after {
+              right: 50%;
+              transform-origin: right;
+            }
+          }
+
+          &:hover {
+            span {
+              &::before,
+              &::after {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+
     li::before {
       width: 24px;
-      height: 24px;
+      height: 23px;
       background-image: url('/assets/arquivos/LinkSimple.svg');
     }
 
@@ -101,9 +148,4 @@
 
 }
 
-//hr{
-//  position: absolute;
-//  width: 97vw;
-//  left: 1vw;
-//}
 
