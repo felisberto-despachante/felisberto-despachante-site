@@ -6,45 +6,45 @@
     <ul>
       <li><div><span>Procuração (pessoa física)</span>
         <div class="download-options">
-          <div (click)="downloadDocument('procuracao-pf', 'pdf')">
-            <span>.pdf</span><a></a>
-          </div>
-          <div (click)="downloadDocument('procuracao-pf', 'docx')">
-            <span>.docx</span><a></a>
-          </div>
+            <a [routerLink]="'/documentos/Procuracao_CRDDBA_PF.pdf'" target="_blank">
+              <span>.pdf</span><a class="download-icon"></a>
+            </a>
+            <a [routerLink]="'/documentos/Procuracao_CRDDBA_PF.docx'" target="_blank">
+              <span>.docx</span><a class="download-icon"></a>
+            </a>
         </div>
       </div></li>
       <hr>
       <li><div><span>Procuração (pessoa juridica)</span>
         <div class="download-options">
-          <div (click)="downloadDocument('procuracao-pj', 'pdf')">
-            <span>.pdf</span><a></a>
-          </div>
-          <div (click)="downloadDocument('procuracao-pj', 'docx')">
-            <span>.docx</span><a></a>
-          </div>
+          <a [routerLink]="'/documentos/Procuracao_CRDDBA_PJ.pdf'" target="_blank">
+            <span>.pdf</span><a class="download-icon"></a>
+          </a>
+          <a [routerLink]="'/documentos/Procuracao_CRDDBA_PJ.docx'" target="_blank">
+            <span>.docx</span><a class="download-icon"></a>
+          </a>
         </div>
       </div></li>
       <hr>
       <li><div><span>Declaração de domicilio/residencia</span>
         <div class="download-options">
-          <div (click)="downloadDocument('declaracao-residencia', 'pdf')">
-            <span>.pdf</span><a></a>
-          </div>
-          <div (click)="downloadDocument('declaracao-residencia', 'docx')">
-            <span>.docx</span><a></a>
-          </div>
+          <a [routerLink]="'/documentos/DECLARACAO DE DOMICILIO.pdf'" target="_blank">
+            <span>.pdf</span><a class="download-icon"></a>
+          </a>
+          <a [routerLink]="'/documentos/DECLARACAO DE DOMICILIO.docx'" target="_blank">
+            <span>.docx</span><a class="download-icon"></a>
+          </a>
         </div>
       </div></li>
       <hr>
       <li><div><span>Requerimento único</span>
         <div class="download-options">
-          <div (click)="downloadDocument('requerimento-unico', 'pdf')">
-            <span>.pdf</span><a></a>
-          </div>
-          <div (click)="downloadDocument('requerimento-unico', 'docx')">
-            <span>.docx</span><a></a>
-          </div>
+          <a [routerLink]="'/documentos/REQUERIMENTO UNICO.pdf'" target="_blank">
+            <span>.pdf</span><a class="download-icon"></a>
+          </a>
+          <a [routerLink]="'/documentos/REQUERIMENTO UNICO.docx'" target="_blank">
+            <span>.docx</span><a class="download-icon"></a>
+          </a>
         </div>
       </div></li>
       <hr>
@@ -53,13 +53,13 @@
   <div class="container links">
     <h3>Links</h3><hr>
     <ul>
-      <li><span>DETRAN BA</span></li><hr>
-      <li><span>Receita Federal</span></li><hr>
-      <li><span>Secretaria da Fazenda</span></li><hr>
-      <li><span>Central SOL</span></li><hr>
-      <li><span>Consultar CPF</span></li><hr>
-      <li><span>COELBA</span></li><hr>
-      <li><span>EMBASA</span></li><hr>
+      <li><a href="https://www.detran.ba.gov.br/" target="_blank"><span>DETRAN BA</span></a></li><hr>
+      <li><a href="https://www.gov.br/receitafederal/pt-br/servicos" target="_blank"><span>Receita Federal</span></a></li><hr>
+      <li><a href="https://www.sefaz.ba.gov.br/" target="_blank"><span>Secretaria da Fazenda BA</span></a></li><hr>
+      <li><a href="https://centralsol.com.br/Ssdr/" target="_blank"><span>Central SOL</span></a></li><hr>
+      <li><a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublica.asp" target="_blank"><span>Consultar CPF</span></a></li><hr>
+      <li><a href="https://servicos.neoenergiacoelba.com.br/Pages/todos-os-servicos.aspx" target="_blank"><span>COELBA</span></a></li><hr>
+      <li><a href="https://www.embasa.ba.gov.br/centralservicos/" target="_blank"><span>EMBASA</span></a></li><hr>
     </ul>
   </div>
 </div>

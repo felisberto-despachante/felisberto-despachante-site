@@ -42,6 +42,9 @@ export class HeaderComponent implements OnInit {
   }
 
   goToSection(section: string) {
-    this.router.navigateByUrl('home#' + section);
+    // this.router.navigateByUrl('home#' + section);
+
+    // @ts-ignore
+    document.getElementById(section).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
   }
 }
