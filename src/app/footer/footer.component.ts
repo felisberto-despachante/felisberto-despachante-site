@@ -11,7 +11,14 @@ export class FooterComponent {
   constructor(private linksService: LinksService) {
   }
 
-  openWhatsapp(){
-    this.linksService.openWhatsApp();
+  openExternalLink(link: string){
+    switch (link) {
+      case('whatsapp'):
+        this.linksService.openWhatsApp();
+        break;
+      case('instagram'):
+        this.linksService.openInstagram();
+    }
+
   }
 }
