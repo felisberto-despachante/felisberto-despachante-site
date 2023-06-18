@@ -12,6 +12,7 @@ import { SectionFourComponent } from './sections/section-four/section-four.compo
 import { SectionServicosComponent } from './sections/section-servicos/section-servicos.component';
 import {NgOptimizedImage} from "@angular/common";
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HeaderComponent } from './header/header.component';
     SectionThreeComponent,
     SectionFourComponent,
     SectionServicosComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

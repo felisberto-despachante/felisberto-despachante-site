@@ -40,4 +40,8 @@ export class HeaderComponent implements OnInit {
       this.router.navigate([option]);
     }
   }
+
+  goToSection(section: string) {
+    this.router.navigateByUrl('home#' + section);
+  }
 }

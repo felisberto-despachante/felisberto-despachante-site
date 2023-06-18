@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {LinksService} from "../../services/links.service";
 
 @Component({
   selector: 'app-section-three',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class SectionThreeComponent {
 
+  constructor(private linksService: LinksService) {
+  }
+
+  openWhatsapp(){
+    this.linksService.openWhatsApp();
+  }
 }

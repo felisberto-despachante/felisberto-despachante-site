@@ -1,26 +1,36 @@
 <header [class.secondary-header-style]="currentPage === '/arquivos'">
   <nav>
     <i class="icon">
-      <img ngSrc="../../assets/F-logo-simples.svg" alt="logo" height="50" width="50"></i>
+      <a href="/">
+        <img ngSrc="../../assets/F-logo-simples.svg" alt="logo" height="50" width="50">
+      </a>
+    </i>
     <ul>
       <li>
-        <a routerLink="#">Nossos Serviços</a></li>
+        <a (click)="goToSection('licenciamento')">Licenciamento</a></li>
       <li>
-        <a routerLink="#">Licenciamento</a></li>
+        <a (click)="goToSection('sobre-nos')">Sobre Nós</a></li>
       <li>
-        <a routerLink="#">Contato</a></li>
+        <a (click)="goToSection('nossos-servicos')">Nossos Serviços</a></li>
       <li class="cstm-dropdown-btn" [class.dropdown-open]="isDropdownOpen">
         <a (click)="toggleDropdown()">
           <span>
-            {{ currentPage === '/home' ? "HOME" : (currentPage === '/arquivos' ? "ARQUIVOS" : "SELECIONE") }}
+            {{
+            currentPage.split('#')[0] === '/home' ? "HOME" :
+              (currentPage === '/arquivos' ? "ARQUIVOS" : "SELECIONE")
+            }}
           </span>
-          <svg class="dropdown-icon" *ngIf="!isDropdownOpen" src="assets/header/dropdown-inactive.svg" alt height="8" width="14"
-                viewBox="0 0 17 10" stroke="white" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15.2262 1.70837L8.55742 8.96532L1.88867 1.70837" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            ></svg>
+          <svg class="dropdown-icon" *ngIf="!isDropdownOpen" src="assets/header/dropdown-inactive.svg" alt height="8"
+               width="14"
+               viewBox="0 0 17 10" stroke="white" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.2262 1.70837L8.55742 8.96532L1.88867 1.70837" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            >
+          </svg>
         </a>
         <ul class="cstm-dropdown-menu" [class.show]="isDropdownOpen">
-          <li *ngFor="let page of pages" [class.active]="currentPage === ( '/' + page)">
+          <li *ngFor="let page of pages"
+              [class.active]="currentPage.split('#')[0] === ('/' + page)">
             <a (click)="selectOption(page)">{{ page.toUpperCase() }}</a>
           </li>
         </ul>

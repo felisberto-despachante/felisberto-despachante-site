@@ -1,0 +1,23 @@
+.bg-preto{
+  flex-direction: column;
+  padding-bottom: 40px;
+  padding-top: 25px;
+
+  .media{
+    display: flex;
+    justify-content: end;
+    width: 98%;
+
+    img{
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  span{
+    padding-top: 80px;
+    text-align: center;
+    color: #F5F5F5;
+    font-weight: 300;
+  }
+}

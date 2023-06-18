@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {LinksService} from '../../services/links.service';
 
 @Component({
   selector: 'app-section-one',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./section-one.component.scss']
 })
 export class SectionOneComponent {
+  constructor(private linksService: LinksService) {
+  }
 
+  openWhatsapp(){
+    this.linksService.openWhatsApp();
+  }
 }
