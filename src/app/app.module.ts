@@ -6,8 +6,8 @@ import {AppRoutingModule} from "./app-routing.module";
 import {HomeComponent} from "./home/home.component";
 import {ArquivosComponent} from "./arquivos/arquivos.component";
 import { SectionOneComponent } from './sections/section-one/section-one.component';
-import { SectionTwoComponent } from './sections/section-two/section-two.component';
-import { SectionThreeComponent } from './sections/section-three/section-three.component';
+import { SectionLicenciamentoComponent } from './sections/section-licenciamento/section-licenciamento.component';
+import { SectionSobreNosComponent } from './sections/section-sobre-nos/section-sobre-nos.component';
 import { SectionFourComponent } from './sections/section-four/section-four.component';
 import { SectionServicosComponent } from './sections/section-servicos/section-servicos.component';
 import {NgOptimizedImage} from "@angular/common";
@@ -20,8 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     ArquivosComponent,
     SectionOneComponent,
-    SectionTwoComponent,
-    SectionThreeComponent,
+    SectionLicenciamentoComponent,
+    SectionSobreNosComponent,
     SectionFourComponent,
     SectionServicosComponent,
     HeaderComponent,

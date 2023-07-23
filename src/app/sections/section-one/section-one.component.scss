@@ -1,6 +1,48 @@
 /*  Section One */
 
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+.section-one {
+  justify-content: center;
+  align-items: center;
+  > img{
+    display: block;
+  }
+  div {
+    width: 50%;
+  }
+  > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+    img {
+      height: 24px;
+      width: 24px;
+      margin-right: 2px;
+      margin-left: 0;
+      padding-bottom: 2px;
+    }
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  img {
+    width: 45%;
+    height: auto;
+    margin-right: 2%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
   .section-one {
     h2{
       font-size: 1.125rem;
@@ -10,52 +52,18 @@
       display: none;
     }
     button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       align-self: end;
-      img {
-        height: 24px;
-        width: 24px;
-        margin-right: 2px;
-        margin-left: 0;
-        padding-bottom: 2px;
-      }
     }
     > div{
+      width: 100%;
       display: flex;
       flex-direction: column;
     }
   }
 }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */
-  .section-one {
-    justify-content: center;
-    align-items: center;
+@media (max-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (max-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (max-width:1281px) { /* hi-res laptops and desktops */
 
-    > img{
-      display: block;
-    }
-    div {
-      width: 50%;
-    }
-    button{
-      align-self: start;
-    }
-    h2 {
-      font-size: 2rem;
-      font-weight: 700;
-    }
-
-    img {
-      width: 45%;
-      height: auto;
-      margin-right: 2%;
-      margin-left: 10%;
-    }
-  }
 }
